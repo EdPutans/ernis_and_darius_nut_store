@@ -1,0 +1,24 @@
+
+@import '../sharedStyles.scss';
+
+.FullWidthSpacer{
+  width: 100%;
+  display: flex;
+  &_picture{
+    flex: 1;
+    // to be replaced
+    background-image: url('../../images/verticalProduct.jpg');
+    background-size: cover;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    position: relative;
+  }
+  &_cover{
+    background-color: rgba(0,0,0,0.4);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+  }
+}

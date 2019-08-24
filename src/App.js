@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import WelcomeScreen from './Components/WelcomeScreen/WelcomeScreen';
+import Section from './Components/Section/Section';
+import MusuProduktas from './Components/musu_produktas/MusuProduktas';
+import MusuIstorija from './Components/musu_istorija/MusuIstorija';
+import FullWidthSpacer from './Components/FullWidthSpacer/FullWidthSpacer';
+import MusuKomanda from './Components/musu_komanda/MusuKomanda';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <WelcomeScreen />
+      {/* <div style={{ maxWidth: '700px' }}> */}
+      <Section title="Musu produktas">
+        <MusuProduktas />
+      </Section>
+      <Section title="Musu istorija">
+        <MusuIstorija />
+      </Section>
+      <FullWidthSpacer />
+      <Section title="Musu komanda">
+        <MusuKomanda />
+      </Section>
+      {/* </div> */}
+    </React.Fragment>
   );
 }
 

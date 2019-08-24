@@ -1,0 +1,16 @@
+$pad: 16px;
+$doublePad: 32px;
+$quadPad: 64px;
+
+:export {
+  pad: $pad;
+  doublePad: 32p$doublePad;
+  quadPad: 64p$quadPad;
+}
+
+.FlexContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

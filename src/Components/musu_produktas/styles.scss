@@ -1,0 +1,24 @@
+
+@import '../sharedStyles.scss';
+.Produktas{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100%;
+  margin-top: 50px;
+  &_left{
+    flex: 1;
+    min-width: 200px
+  }
+  &_right{
+    flex: 1;
+    margin: $pad;
+    min-width: 200px;
+    background-size: contain;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    & img{
+      max-width: 100%;
+    }
+  }
+}
