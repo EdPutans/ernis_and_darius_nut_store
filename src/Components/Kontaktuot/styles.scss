@@ -3,10 +3,12 @@
 .Contact{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   &_container_rows{
     flex: 1;
     display: flex;
     flex-direction: column;
+    margin: 0 $pad;
   }
   &_textarea{
     margin: 0 $pad;

@@ -16,6 +16,11 @@ const MusuIstorija = () => {
         adaptogen man bun, try-hard ethical polaroid freegan sriracha tbh leggings put a bird on it semiotics. Photo
         booth gastropub art party af echo park ramps
       </p>
+      <p>
+        Affogato raclette pug, taiyaki photo booth hoodie four loko gastropub street art bicycle rights. Bicycle rights
+        adaptogen man bun, try-hard ethical polaroid freegan sriracha tbh leggings put a bird on it semiotics. Photo
+        booth gastropub art party af echo park ramps
+      </p>
     </div>
   );
 };

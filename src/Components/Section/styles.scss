@@ -2,9 +2,9 @@
 
 .Section{
   margin: 25px auto 100px;
-  max-width: 900px;
+  max-width: 800px;
   @include respond-to($phone){
-    margin: 0 $pad;
+    margin: 0 $doublePad;
   }
   &_title {
     margin: $pad 0;

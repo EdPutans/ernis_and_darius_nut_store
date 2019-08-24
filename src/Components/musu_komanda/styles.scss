@@ -3,6 +3,7 @@
 .Komanda{
   &_row{
     display: flex;
+    flex-wrap: wrap;
     margin-top: $quadPad;
     align-items: center;
     &_pic{
@@ -18,7 +19,6 @@
       }
       &_container{
         flex: 1;
-        flex-wrap: wrap;
         display: flex;
         justify-content: center;
       }
@@ -31,9 +31,14 @@
         flex: 3;
         margin: 0 $pad;
       }
-      font-size: 20px;
       color: rgb(85, 85, 85);
       text-align: justify;
     }
+  }
+}
+
+.ReverseOnPhone{
+  @include respond-to($phone){
+    flex-direction: column-reverse;
   }
 }
