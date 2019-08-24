@@ -12,6 +12,7 @@
     "react"
   ],
   "rules": {
+    "react/prop-types": 0,
     "prettier/prettier": "error",
     "global-require": 0,
     "no-use-before-define": 0,
@@ -19,7 +20,7 @@
     "react/jsx-filename-extension": [2, {"extensions": [".js"]}],
     "import/no-cycle": 2,
     "unicorn/import-index": 2,
-    "no-unused-vars": 2
+    "no-unused-vars": 2,
   },
   "env": {
     "jest": true,
