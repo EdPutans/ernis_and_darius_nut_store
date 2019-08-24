@@ -1,7 +1,7 @@
 @import '../sharedStyles.scss';
 
 .Section{
-  margin: 25px auto 100px;
+  margin: 25px auto ;
   max-width: 800px;
   @include respond-to($phone){
     margin: 0 $doublePad;

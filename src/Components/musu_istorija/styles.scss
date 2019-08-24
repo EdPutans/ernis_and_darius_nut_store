@@ -1,0 +1,8 @@
+@import '../sharedStyles.scss';
+
+.Istorija{
+  margin-bottom: $quadPad;
+  & p{
+    margin: $doublePad 0;
+  }
+}

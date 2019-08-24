@@ -10,7 +10,6 @@ const MusuIstorija = () => {
         blue bottle. Brooklyn pop-up copper mug meggings, try-hard la croix chillwave subway tile af tofu cloud bread
         beard distillery direct trade venmo.
       </p>
-      <br />
       <p>
         Affogato raclette pug, taiyaki photo booth hoodie four loko gastropub street art bicycle rights. Bicycle rights
         adaptogen man bun, try-hard ethical polaroid freegan sriracha tbh leggings put a bird on it semiotics. Photo

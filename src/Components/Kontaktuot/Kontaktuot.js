@@ -17,23 +17,23 @@ const Kontaktuot = () => {
   const [success, setSuccess] = useState(null);
 
   const sendMail = sendData => {
-    // if (checkData(sendData)) {
-    //   fetch(`https://www.enformed.io/nai53vxo/`, {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-Type': 'application/json',
-    //       Accept: 'application/json',
-    //     },
-    //     body: JSON.stringify(sendData),
-    //   })
-    //     .then(response => response.json())
-    //     .then(() => setSuccess('sekmingai issiusta'))
-    //     .catch(() => setError('Deja ivyko klaida. Gal pasukit mums? :)'));
-    // }
+    if (checkData(sendData)) {
+      fetch(`https://www.enformed.io/nai53vxo/`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify(sendData),
+      })
+        .then(response => response.json())
+        .then(() => setSuccess('sekmingai issiusta'))
+        .catch(() => setError('Deja ivyko klaida. Gal pasukit mums? :)'));
+    }
   };
   const checkData = ({ email, phone, name, message }) => poorlyValidateEmail(email) && phone && name && message;
   return (
-    <React.Fragment>
+    <div style={{ marginBottom: '64px' }}>
       <h3>Parasykite mums!</h3>
       <form id="contact">
         <div className="Contact">
@@ -85,7 +85,7 @@ const Kontaktuot = () => {
           </div>
         </div>
       </form>
-    </React.Fragment>
+    </div>
   );
 };
 
