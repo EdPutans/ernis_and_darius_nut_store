@@ -2,7 +2,7 @@ export default {
   instagram: 'http://www.instagram.com',
   facebook: 'http://www.facebook.com',
   phone: '+44 0000 000000',
-  email: 'email@riesutai.com',
+  email: 'proteinoriesutusviestas@gmail.com',
 };
 
 export const linksAndRefs = {

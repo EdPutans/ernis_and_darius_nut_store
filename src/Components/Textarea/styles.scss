@@ -8,7 +8,8 @@
   margin-bottom: $pad;
   padding: $pad;
   resize: none;
-  // box-si:border-box;
+  font-size: 14px;
+
   &:focus{
     outline: none;
   }

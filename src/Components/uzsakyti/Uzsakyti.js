@@ -4,6 +4,7 @@ import envelope from '../../images/envel.png';
 import phone from '../../images/phone.png';
 import insta from '../../images/insta.png';
 import facebook from '../../images/facebook.png';
+import links from '../../constants';
 
 const Uzsakyti = () => {
   return (
@@ -16,21 +17,25 @@ const Uzsakyti = () => {
       <div className="Uzsakyti_contactInfo">
         <div className="Uzsakyti_contactInfo_entry">
           <img className="Uzsakyti_contactInfo_entry_image" src={phone} />
-          <div className="Uzsakyti_contactInfo_entry_text">
-            <p>+44 7777 033012</p>
-          </div>
+          <a style={{ textDecoration: 'none' }} href={`tel:${links.phone}`}>
+            <div className="Uzsakyti_contactInfo_entry_text">
+              <p>{links.phone}</p>
+            </div>
+          </a>
         </div>
         <div className="Uzsakyti_contactInfo_entry">
           <img className="Uzsakyti_contactInfo_entry_image" src={envelope} />
           <div className="Uzsakyti_contactInfo_entry_text">
-            <p>pastas@riesutai.com</p>
+            <a style={{ textDecoration: 'none' }} href={`mailto:${links.email}?Subject=Hello%20again`}>
+              <p>{links.email}</p>
+            </a>
           </div>
         </div>
         <div className="Uzsakyti_contactInfo_entry">
           <img className="Uzsakyti_contactInfo_entry_image" src={facebook} />
           <div className="Uzsakyti_contactInfo_entry_text">
             <p>
-              <a style={{ textDecoration: 'none' }} href="http://www.facebook.com">
+              <a style={{ textDecoration: 'none' }} rel="noopener noreferrer" target="_blank" href={links.facebook}>
                 fb.com/riesutai
               </a>
             </p>
@@ -39,7 +44,9 @@ const Uzsakyti = () => {
         <div className="Uzsakyti_contactInfo_entry">
           <img className="Uzsakyti_contactInfo_entry_image" src={insta} />
           <div className="Uzsakyti_contactInfo_entry_text">
-            <p>@riesutai</p>
+            <a style={{ textDecoration: 'none' }} rel="noopener noreferrer" target="_blank" href={links.instagram}>
+              <p>@riesutai</p>
+            </a>
           </div>
         </div>
       </div>
