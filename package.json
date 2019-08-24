@@ -1,5 +1,5 @@
 {
-  "name": "matchpint-cms",
+  "name": "riesutai",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
@@ -25,7 +25,6 @@
     "react": "^16.8.0",
     "react-circular-progressbar": "^1.0.0",
     "react-color": "^2.14.1",
-    "react-common": "MatchPint/react-common",
     "react-dom": "^16.4.1",
     "react-flippy": "^0.1.2",
     "react-image": "^1.3.1",
@@ -44,13 +43,10 @@
     "redux-thunk": "^2.2.0"
   },
   "scripts": {
-    "precommit": "yarn eslint && yarn test-once",
     "eslint": "eslint src --quiet",
-    "eslint:fix": "eslint src --quiet --fix",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "test-once": "cross-env CI=true react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy:staging": "bash -e ./deploy.sh staging",
     "deploy:production": "bash -e ./deploy.sh production"
