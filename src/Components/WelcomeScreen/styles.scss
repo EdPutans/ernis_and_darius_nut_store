@@ -73,6 +73,7 @@
       }
     }
     &_title{
+      padding: $doublePad;
       font-size: 30px;
       color: white;
       text-align: center;
@@ -83,7 +84,7 @@
       }
       &_logo{
         max-height: 50px;
-        margin-right: $doublePad;
+        margin: auto;
       }
       &_container{
         display: flex;
