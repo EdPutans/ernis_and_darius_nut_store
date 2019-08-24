@@ -27,7 +27,7 @@ const Kontaktuot = () => {
         body: JSON.stringify(sendData),
       })
         .then(response => response.json())
-        .then(() => setSuccess('sekmingai issiusta'))
+        .then(() => setSuccess('Zinute sekmnigai issiusta'))
         .catch(() => setError('Deja ivyko klaida. Gal pasukit mums? :)'));
     }
   };

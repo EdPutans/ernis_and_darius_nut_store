@@ -36,7 +36,7 @@ const WelcomeScreen = () => {
     <div className="WelcomeScreen">
       <div className="WelcomeScreen_image">
         {renderSocialLinks()}
-        <div className="WelcomeScreen_downArrow" onClick={() => window.scrollTo(0, 900)}>
+        <div className="WelcomeScreen_downArrow" onClick={() => window.scrollTo(0, window.innerHeight)}>
           <DownArrow fill="white" width="50px" />
         </div>
         <div className="WelcomeScreen_overlay" />

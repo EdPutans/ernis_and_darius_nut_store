@@ -34,11 +34,9 @@ const Uzsakyti = () => {
         <div className="Uzsakyti_contactInfo_entry">
           <img className="Uzsakyti_contactInfo_entry_image" src={facebook} />
           <div className="Uzsakyti_contactInfo_entry_text">
-            <p>
-              <a style={{ textDecoration: 'none' }} rel="noopener noreferrer" target="_blank" href={links.facebook}>
-                fb.com/riesutai
-              </a>
-            </p>
+            <a style={{ textDecoration: 'none' }} rel="noopener noreferrer" target="_blank" href={links.facebook}>
+              <p>fb.com/riesutai</p>
+            </a>
           </div>
         </div>
         <div className="Uzsakyti_contactInfo_entry">
