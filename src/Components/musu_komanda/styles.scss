@@ -18,6 +18,7 @@
       }
       &_container{
         flex: 1;
+        flex-wrap: wrap;
         display: flex;
         justify-content: center;
       }

@@ -1,43 +1,54 @@
 import React from 'react';
 import './styles.scss';
 import logo from '../../images/logo.png';
+import InstagramLogo from '../../images/instagram-logo';
+import FacebookLogo from '../../images/facebook-logo';
+import links, { linksAndRefs } from '../../constants';
+import DownArrow from '../../images/down-arrow (1)';
 
 const WelcomeScreen = () => {
   const renderLinks = () => (
-    // <div className="WelcomeScreen_column_link_container">
-    <React.Fragment>
-      <div className="WelcomeScreen_column_link_container">
-        <a className="WelcomeScreen_column_link" href="">
-          Produktas
+    <div className="WelcomeScreen_column_link_container">
+      {Object.keys(linksAndRefs).map(link => (
+        <div className="WelcomeScreen_column_link_holder">
+          <a className="WelcomeScreen_column_link" href={linksAndRefs[link].link}>
+            {linksAndRefs[link].name}
+          </a>
+        </div>
+      ))}
+    </div>
+  );
+
+  const renderSocialLinks = () => {
+    return (
+      <div className="WelcomeScreen_socialLinks">
+        <a target="_blank" rel="noopener noreferrer" href={links.instagram}>
+          <InstagramLogo size="50px" fill="white" />
         </a>
-        <a className="WelcomeScreen_column_link" href="">
-          Istorija
-        </a>
-        <a className="WelcomeScreen_column_link" href="">
-          Komanda
-        </a>
-        <a className="WelcomeScreen_column_link" href="">
-          Uzsakyti
-        </a>
-        <a className="WelcomeScreen_column_link" href="">
-          Kontaktai
+        <a target="_blank" rel="noopener noreferrer" href={links.facebook}>
+          <FacebookLogo size="50px" fill="white" />
         </a>
       </div>
-    </React.Fragment>
-  );
+    );
+  };
 
   return (
     <div className="WelcomeScreen">
-      <div className="WelcomeScreen_image" />
-      <div className="WelcomeScreen_overlay" />
+      <div className="WelcomeScreen_image">
+        {renderSocialLinks()}
+        <div className="WelcomeScreen_downArrow" onClick={() => window.scrollTo(0, 900)}>
+          <DownArrow fill="white" width="50px" />
+        </div>
+        <div className="WelcomeScreen_overlay" />
+      </div>
       <div className="WelcomeScreen_contentContainer">
         <div className="WelcomeScreen_column_container">
-          <div className="WelcomeScreen_column" style={{ flex: 1 }}>
+          <div style={{ flex: 1 }} className="WelcomeScreen_column HideOnPhone">
             {renderLinks()}
           </div>
-          <div className="WelcomeScreen_column" style={{ flex: 2 }}>
+          <div style={{ flex: 4 }} className="WelcomeScreen_column">
             <div className="WelcomeScreen_column_rightStuff">
-              <div style={{ display: 'flex', alignItems: 'center', margin: 'auto' }}>
+              <div className="WelcomeScreen_column_title_container">
                 <img src={logo} className="WelcomeScreen_column_title_logo" />
                 <p className="WelcomeScreen_column_title_big">Riesutai voverems</p>
               </div>

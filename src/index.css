@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+
+}
 body {
   font-size: 20px;
   margin: 0;
@@ -9,11 +13,12 @@ body {
   letter-spacing: 0.1ch;
 }
  
-p {
+p, a {
   font-size: 20px;
   color: rgb(85, 85, 85);
-
+  text-decoration: none;
 }
+
 h3 {
   font-weight: 600;
 }

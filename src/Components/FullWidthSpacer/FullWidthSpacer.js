@@ -7,10 +7,10 @@ const FullWidthSpacer = () => {
       <div className="FullWidthSpacer_picture">
         <div className="FullWidthSpacer_cover" />
       </div>
-      <div className="FullWidthSpacer_picture">
+      <div className="FullWidthSpacer_picture HideOnPhone">
         <div className="FullWidthSpacer_cover" />
       </div>
-      <div className="FullWidthSpacer_picture">
+      <div className="FullWidthSpacer_picture HideOnPhone">
         <div className="FullWidthSpacer_cover" />
       </div>
     </div>

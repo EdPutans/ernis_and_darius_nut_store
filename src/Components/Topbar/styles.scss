@@ -1,0 +1,51 @@
+@import '../sharedStyles.scss';
+
+.Topbar{
+  z-index: 100;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: rgba(0,0,0,0.8);
+  @include respond-to($phone){
+    // border-bottom: 1px solid transparent;
+    display:none;
+  }
+  &_links{
+    flex: 5;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 $doublePad;
+    flex-wrap: wrap;
+    &_link{
+      color:  white;
+      padding: $pad $pad 12px $pad;
+      border-bottom: 1px solid transparent;
+      margin-bottom: 4px;
+      transition: all 0.2s;
+      &:hover{
+        border-bottom: 1px solid white;
+        @include respond-to($phone){
+          border-bottom: 1px solid transparent;
+        }
+      }
+      @include respond-to($phone){
+        width: 100%;
+        padding: 8px;
+        margin: 0;
+      }
+    }
+  }
+  &_logo{
+    flex: 1;
+    @include respond-to($phone){
+      display: none;
+     }
+    & img{
+      max-height: 50px;
+   
+    }
+  }
+}

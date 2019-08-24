@@ -1,0 +1,34 @@
+@import '../sharedStyles.scss';
+
+.Contact{
+  display: flex;
+  flex-direction: row;
+  &_container_rows{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  &_textarea{
+    margin: 0 $pad;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  &_error{
+    text-align: center;
+    font-size: 12px;
+    color: $errorRed;
+  }
+  &_success{
+    text-align: center;
+
+    font-size: 12px;
+    color: $successGreen;
+  }
+  &_buttonContainer{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-self: flex-end;
+  }
+}

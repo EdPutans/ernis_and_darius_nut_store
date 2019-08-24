@@ -1,11 +1,19 @@
 $pad: 16px;
 $doublePad: 32px;
 $quadPad: 64px;
+$successGreen: #4a9a41;
+$errorRed: rgb(255, 100, 100);
+$textGray: #555555;
+$lightGray: rgb(141, 141, 141);
 
 :export {
   pad: $pad;
   doublePad: 32p$doublePad;
   quadPad: 64p$quadPad;
+  successGreen: $successGreen;
+  errorRed: $errorRed;
+  textGray: $textGray;
+
 }
 
 .FlexContainer{
@@ -13,4 +21,29 @@ $quadPad: 64px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+
+
+$phone: 'screen and (max-width: 800px)';
+$desktop: 'screen and (min-width: 801px)';
+
+@mixin respond-to($medias...) {
+  @each $media in $medias {
+    @media only #{$media} {
+      @content;
+    }
+  }
+}
+
+
+:export {
+  phone: $phone;
+  desktop: $desktop;
+}
+
+.HideOnPhone{
+  @include respond-to($phone){
+    display: none;
+  }
 }

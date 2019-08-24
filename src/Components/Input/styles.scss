@@ -1,0 +1,14 @@
+@import '../sharedStyles.scss';
+
+.Input{
+  height: 30px;
+  border-radius: 10px;
+  box-shadow: none;
+  border: 1px solid $lightGray;
+  margin-bottom: $pad;
+  padding: 0 $pad;
+  color: $textGray;
+  &:focus{
+    outline: none;
+  }
+}

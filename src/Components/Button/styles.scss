@@ -1,0 +1,12 @@
+@import '../sharedStyles.scss';
+
+.Button {
+  border: none;
+  background-color: $lightGray;
+  border-radius: 10px;
+  height: 20px;
+  color: white;
+  &:focus{
+    outline: none;
+  }
+}

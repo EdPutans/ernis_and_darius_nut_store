@@ -3,6 +3,9 @@
 .Section{
   margin: 25px auto 100px;
   max-width: 900px;
+  @include respond-to($phone){
+    margin: 0 $pad;
+  }
   &_title {
     margin: $pad 0;
     font-weight: 300;
