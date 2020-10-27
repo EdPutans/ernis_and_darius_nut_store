@@ -1,6 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). Reason - urgency.
 
-## Available Scripts
+## TLDR
 
 A web page I designed and build in one day.
 
